@@ -1,0 +1,64 @@
+package clase0;
+
+import java.util.Scanner;
+
+public class Calculadora {
+    @SuppressWarnings("empty-statement")
+    public static void main(String[] args) {
+       
+       //bloque de creacion de variables
+        double operando1 = 0;
+        double operando2 = 0;
+        double resultado = 0;
+        int operacion = 0;
+        Scanner teclado = new Scanner(System.in);
+       
+        //bloque de logica del proceso
+       
+        System.out.println("Dime el primer operando");
+        operando1 = teclado.nextDouble();
+       
+       
+        System.out.println("Dime el segundo operando");
+        operando2 = teclado.nextDouble();
+       
+        System.out.println("MENU");
+        System.out.println("----------------------");
+        System.out.println("1 Suma");
+        System.out.println("2 Resta");
+        System.out.println("3 Multiplicacion");
+        System.out.println("4 Division");
+        System.out.println("Dime la opèracion:");
+        operacion = teclado.nextInt();
+       
+       
+        if(operacion == 1) {
+        //operaciones
+        resultado = operando1 + operando2;
+        System.out.println("La suma es:" + resultado);
+        }
+       
+        else {
+          if(operacion == 2) {
+        resultado = operando1 - operando2;
+        System.out.println("La resta es:" + resultado);
+        }
+         
+         else {
+          if(operacion == 3) {
+        resultado = operando1 * operando2;
+        System.out.println("La multiplicaion es:" + resultado);
+        }
+         
+         else {
+          if(operacion == 4) {
+        resultado = operando1 / operando2;
+        System.out.println("La division es:" + resultado);
+        }
+       
+       
+      }
+    }
+   }
+  }
+}
