@@ -1,0 +1,29 @@
+// Acumulador
+package clase0;
+
+import java.util.Scanner;
+
+
+public class Bucles {
+     public static void main(String[] args) {
+     Scanner teclado = new Scanner(System.in);
+     boolean entrar = true;
+     int numero = 0;
+     int suma = 0;
+     
+     while (entrar){
+         System.out.println("Dame un numero");
+         numero = teclado.nextInt();
+         
+         if (numero <= 0) {
+           entrar = false;
+         }
+         
+         else {
+            suma = suma + numero;
+         }
+     }
+         System.out.println("La suma es:" + suma);
+     }
+}
+
