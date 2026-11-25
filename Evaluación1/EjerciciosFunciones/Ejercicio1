@@ -10,15 +10,28 @@ public class EjerciciosFunciones {
         public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
         int a = -1;
+   
+        }
 
-    /*1. Realizar una función, a la que se le pase como parámetro un número
-    N, y muestre por pantalla N veces, el mensaje: “Módulo ejecutándose”*/
+       
+        public static void repetir(){
+          Scanner teclado = new Scanner(System.in);
+          /*1. Realizar una función, a la que se le pase como parámetro un número
+            N, y muestre por pantalla N veces, el mensaje: “Módulo ejecutándose”*/
                     int N = 0;
                     System.out.println("Dime un numero");
                     N = teclado.nextInt();
          
                    for(int i=1 ; i<=N ; i++){
                    System.out.println("Módulo ejecutándose");
-                   };
-  }
+                   }
+         }          
+   
+         public static void SumarNumerosImpares(){
+         }
+         
+       public static int dobleDeEsteNumero(int num){
+       return num*2;
+       }
 }
+
