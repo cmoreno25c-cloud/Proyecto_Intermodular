@@ -27,11 +27,7 @@ public class EjerciciosFunciones {
                    }
          }          
    
-         public static void SumarNumerosImpares(){
-         }
-         
-       public static int dobleDeEsteNumero(int num){
-       return num*2;
-       }
+        
+        
 }
 
